@@ -36,6 +36,57 @@
 //   } driver's license `
 // );
 
-for (let rep = 1; rep >= 1; rep++) {
-  console.log("Lifting weights repetition 1 🏋️‍♀️");
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
+// }
+// const jonas = [
+//   "Jonas",
+//   "Schmedtmann",
+//   2037 - 1991,
+//   "teacher",
+//   ["Michael", "Peter", "Steven"],
+// ];
+
+// for (let i = 0; i < jonas.length; i++) {
+//   console.log(jonas[i]);
+// }
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//   ages[i] = 2023 - years[i];
+// }
+// console.log(ages);
+
+// function getRandomNumber() {
+//   // Generate a random decimal between 0 (inclusive) and 1 (exclusive)
+//   const randomDecimal = Math.random();
+
+//   // Scale the random decimal to the range 1 to 6 (inclusive)
+//   const randomNumber = Math.floor(randomDecimal * 6) + 1;
+
+//   return randomNumber;
+// }
+
+// // Example usage
+// const randomNum = getRandomNumber();
+// console.log("Random number between 1 and 6:", randomNum);
+
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+
+/* Write your code below. Good luck! 🙂 */
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+for (let i = 0; i < bills.length; i++) {
+  tips[i] = calcTip(bills[i]);
+  totals[i] = bills[i] + tips[i];
 }
+
+console.log("Bills", bills);
+console.log("Tips", tips);
+console.log("Totals", totals);
